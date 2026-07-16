@@ -1,7 +1,7 @@
 # FF14 Bard Midi Editor
 A midi editor with features designed specifically with Final Fantasy 14's bards in mind
 
-**This program is in early beta and should not be used as a replacement YET. I am a solo dev on this passion project, and while i have commitment issues with project I do intend to see this through, it is just a lot of work and features.**
+**This program is in early beta and should not be used as a replacement YET. I am a solo dev on this passion project, and while i have commitment issues with projects I do intend to see this through, it is just a lot of work and features.**
 #
 
 Someone I know, myself included, was getting very tired with the program "midieditor" because it kept crashing,it was slow, and was missing several essential features.
