@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"FFXIV_Confirm",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.61839,
+  "exportDir":"",
+  "name":"FFXIV_Confirm",
+  "parent":{
+    "name":"FFXIV menu sound pack",
+    "path":"folders/Sounds/FFXIV menu sound pack.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"FFXIV_Confirm.mp3",
+  "volume":0.2,
+}

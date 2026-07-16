@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sMIDInit",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sMIDInit",
+  "parent":{
+    "name":"Arpeggiator",
+    "path":"folders/GMSSimpleMIDI/Arpeggiator.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,5 @@
+﻿  miditest.cpp
+C:\Users\SLIPP\source\repos\miditest\miditest\miditest.cpp(150,59): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\SLIPP\source\repos\miditest\miditest\miditest.cpp(209,60): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+     Creating library C:\Users\SLIPP\source\repos\miditest\x64\Debug\miditest.lib and object C:\Users\SLIPP\source\repos\miditest\x64\Debug\miditest.exp
+  miditest.vcxproj -> C:\Users\SLIPP\source\repos\miditest\x64\Debug\miditest.dll

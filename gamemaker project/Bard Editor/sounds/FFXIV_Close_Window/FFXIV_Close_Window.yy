@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"FFXIV_Close_Window",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.48095238,
+  "exportDir":"",
+  "name":"FFXIV_Close_Window",
+  "parent":{
+    "name":"FFXIV menu sound pack",
+    "path":"folders/Sounds/FFXIV menu sound pack.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"FFXIV_Close_Window.mp3",
+  "volume":0.21,
+}

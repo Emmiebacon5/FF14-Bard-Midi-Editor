@@ -1,0 +1,25 @@
+should
+support default drum sounds as a test-sound for import purposes
+Use MP4 files for playback, NOT midi
+
+could
+
+
+wont
+do your taxes
+
+
+-When a note is detected that plays for longer than two measures -> mark it and give an option to split the note over these two measures (only two measures at a time max generally is sufficient).
+Or, if not possible, at least mark it as a potential error
+
+-A function for electric guitar switches to a "Program:ElectricGuitar" to be easily applied. Right now the settings only will change when a program change is added and then the necessary new instrument must be set. The list of these is long and should only be limited to the available options. 
+These are:
+A. Electric Guitar (Clean)
+B. Electric Guitar (Muted)
+C. Overdriven Guitar
+D. Distortion Guitar
+C. "Special" Guitar (honestly I forget the name here but it's never used anyway)
+
+-A function to align a new created or shortened note to start at measure or end at one would help. It currently can only simple be created and you have to zoom in to see if the note starts or ends closely at the start/end of a measure. 
+
+-When currently opening the midieditor it can't read certain characters such as this dash sign — which causes an error message upon opening a midi

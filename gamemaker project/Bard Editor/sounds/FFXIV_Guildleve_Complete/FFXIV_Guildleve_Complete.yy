@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"FFXIV_Guildleve_Complete",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":9.848164,
+  "exportDir":"",
+  "name":"FFXIV_Guildleve_Complete",
+  "parent":{
+    "name":"FFXIV menu sound pack",
+    "path":"folders/Sounds/FFXIV menu sound pack.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"FFXIV_Guildleve_Complete.mp3",
+  "volume":0.28,
+}
