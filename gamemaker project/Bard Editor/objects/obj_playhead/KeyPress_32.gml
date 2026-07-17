@@ -8,3 +8,4 @@ if(shiftdown){x = mouse_x;
 	isplaying = false;
 	sentoff = false;
 }}
+if(!playing){sMIDIPanic()}

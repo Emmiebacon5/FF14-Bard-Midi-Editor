@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"505fed06-5323-461d-b11b-4561f66da049","name":"505fed06-5323-461d-b11b-4561f66da049","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"29370a28-b67d-499b-92e0-785a92b90b35","name":"29370a28-b67d-499b-92e0-785a92b90b35","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":1080,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"0108f36b-55e2-41a6-a774-324cb7707f71","blendMode":0,"displayName":"default","isLocked":false,"name":"0108f36b-55e2-41a6-a774-324cb7707f71","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"0704f4cf-e3e5-4344-be93-67c148355ce3","blendMode":0,"displayName":"default","isLocked":false,"name":"0704f4cf-e3e5-4344-be93-67c148355ce3","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"bard_editor_menu_with_pixel_bards",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"505fed06-5323-461d-b11b-4561f66da049","path":"sprites/bard_editor_menu_with_pixel_bards/bard_editor_menu_with_pixel_bards.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"18e1c355-3ff2-4e65-80b8-68ba395ebf97","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"29370a28-b67d-499b-92e0-785a92b90b35","path":"sprites/bard_editor_menu_with_pixel_bards/bard_editor_menu_with_pixel_bards.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b9b23661-43b6-4f6d-aabb-b4a20ef0273a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
