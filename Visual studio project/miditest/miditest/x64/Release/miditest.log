@@ -1,15 +1,15 @@
 ﻿  miditest.cpp
-C:\Users\SLIPP\source\repos\miditest\miditest\miditest.cpp(150,59): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-C:\Users\SLIPP\source\repos\miditest\miditest\miditest.cpp(208,60): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\SLIPP\Documents\1 1 FF midieditor\FF14 Bard Midi Editor\Visual studio project\miditest\miditest\miditest.cpp(159,59): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\SLIPP\Documents\1 1 FF midieditor\FF14 Bard Midi Editor\Visual studio project\miditest\miditest\miditest.cpp(225,60): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
   Binasc.cpp
   MidiEvent.cpp
   MidiEventList.cpp
   MidiFile.cpp
   MidiMessage.cpp
   Options.cpp
-     Creating library C:\Users\SLIPP\source\repos\miditest\x64\Release\miditest.lib and object C:\Users\SLIPP\source\repos\miditest\x64\Release\miditest.exp
+     Creating library C:\Users\SLIPP\Documents\1 1 FF midieditor\FF14 Bard Midi Editor\Visual studio project\miditest\x64\Release\miditest.lib and object C:\Users\SLIPP\Documents\1 1 FF midieditor\FF14 Bard Midi Editor\Visual studio project\miditest\x64\Release\miditest.exp
   Generating code
   Previous IPDB not found, fall back to full compilation.
-  All 1278 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  All 1275 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
-  miditest.vcxproj -> C:\Users\SLIPP\source\repos\miditest\x64\Release\miditest.dll
+  miditest.vcxproj -> C:\Users\SLIPP\Documents\1 1 FF midieditor\FF14 Bard Midi Editor\Visual studio project\miditest\x64\Release\miditest.dll

@@ -5,6 +5,8 @@
 for (i = 0;i < ds_list_size(currently_selected_notes); i++){
 	with(ds_list_find_value(currently_selected_notes,i)){
 		draw_rectangle_colour(x,y,x+duration,y+10,#AA6C39,#AA6C39,#AA6C39,#AA6C39,false)
+		draw_text(x,y,tick)
+		draw_text(x,y+20,tick+duration)
 	}
 }
 if(drawselectbox){

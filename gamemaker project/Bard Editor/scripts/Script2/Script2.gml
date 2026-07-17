@@ -15,6 +15,7 @@ function Script2(){
 			midimanager.importTPQ = currvalue
 			midimanager.TPQ = currvalue;
 			midimanager.startTPQ = currvalue;
+			midimanager.actualfuckingtpq = currvalue;
 			midimanager.tickspersecond = ds_list_find_value(global.filedata,i+1)
 			i++;
 			continue;
@@ -38,7 +39,7 @@ function Script2(){
 		if (currvalue == -22){
 			//we know this is a tempochange
 			var newtpq = ds_list_find_value(global.filedata,i+1);
-			newtpq = 60000000 / newtpq;
+			//newtpq = 60000000 / newtpq;
 			newtpq = newtpq;
 			midimanager.importTPQ = newtpq;
 			with(obj_tempo_change){if(tick == 0) {instance_destroy()}} //delete duplicate start tempos
@@ -46,7 +47,8 @@ function Script2(){
 			object.exportTPQ = newtpq;
 			object.tick = ds_list_find_value(global.filedata,i-1);
 			if (object.tick == 0){
-				midimanager.startTPQ = newtpq
+				midimanager.starttempo = newtpq
+				midimanager.tempo = newtpq
 				midimanager.TPQ = newtpq
 			}
 			i = i + 1 //moving on

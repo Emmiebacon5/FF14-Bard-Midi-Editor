@@ -57,8 +57,10 @@ func double savemidi(int* buffer) {
     int instr = options.getInteger("instrument");
     midifile.addTimbre(track, 0, channel, instr);
     cout << buffer[bufferpos] << endl;
-    midifile.setTPQ(16000/buffer[bufferpos]);
-    midifile.addTimeSignature(track, 0, 4, 4);
+    midifile.addTempo(0, 0, buffer[bufferpos]);
+    bufferpos++;
+    midifile.setTPQ(buffer[bufferpos]);
+    
     
     cout << bufferpos << endl;
     bufferpos++;
@@ -75,14 +77,21 @@ func double savemidi(int* buffer) {
             cout << "added on and off" << endl;
             continue;
         }
+        
         else if (buffer[bufferpos] == -22) { //code for tempochange
-            midifile.addTempo(0, buffer[bufferpos + 1], buffer[bufferpos + 2]);
+            //midifile.addTempo(0, buffer[bufferpos + 1], buffer[bufferpos + 2]);
             bufferpos += 3;
-            cout << "added tempo" << endl;
+            //cout << "added tempo" << endl;
             continue;
         }
         if (buffer[bufferpos] == -21) { break; }
+        bufferpos++;
     }
+    //// Cross reference song length with original BME
+    //float tps = midifile.getFileDurationInTicks() / midifile.getFileDurationInSeconds();
+    //float originaltps = buffer[bufferpos + 1]; //where og tps is stored
+    //midifile.setTPQ(round(originaltps / tps));
+
     cout << "finished loop, sorting" << endl;
     midifile.sortTracks();
     cout << "sorted" << endl;
@@ -139,7 +148,7 @@ func double loadmidifile(const char* filename, int* buffer) {
     MidiFile midifile;
     midifile.read(filename);
     //else midifile.read(options.getArg(1));
-    midifile.doTimeAnalysis();
+    //midifile.doTimeAnalysis();
     midifile.linkNotePairs();
 
     int tracks = midifile.getTrackCount();
@@ -149,11 +158,16 @@ func double loadmidifile(const char* filename, int* buffer) {
     bufferpos ++;
     buffer[bufferpos] = midifile.getFileDurationInTicks() / midifile.getFileDurationInSeconds();
     bufferpos++;
+
     
     cout << "Hello there!" << endl;
     if (tracks > 1) cout << "TRACKS: " << tracks << endl;
     cout << "found tracks" << endl;
     for (int track = 0; track < tracks; track++) {
+
+
+
+
         if (tracks > 1) cout << "\nTrack " << track << endl;
         //cout << "adding -20..." << endl;
         //cout << bufferpos << endl;
@@ -163,6 +177,9 @@ func double loadmidifile(const char* filename, int* buffer) {
         //cout << "added -20" << endl;
         //cout << "Tick\tSeconds\tDur\tMessage" << endl;
         for (int event = 0; event < midifile[track].size(); event++) {
+
+
+
             //cout << dec << midifile[track][event].tick;
 
             //cout << "adding tick data..." << endl;
