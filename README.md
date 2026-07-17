@@ -19,8 +19,9 @@ Created with C++ and GamemakerStudio 2 (A program with no midi implementation wh
 - Hopefully, be able to play midi files in the **FF14 SOUNDFONT** (or if not, guide the user in being able to do so, as the solution may not be within the program itself)
 
 ## This program was made using these external libraries, and would not be possible without them:
-- GMSSimpleMIDI
-- RTMidi
+- GMSSimpleMIDI: https://github.com/RhyminGarfunkle/GMSSimpleMIDI
+- RTMidi: https://github.com/thestk/rtmidi
+- Craigsapp's midifile: https://github.com/craigsapp/midifile
 
 
 ##### *Final Fantasy 14 is owned by Square Enix, and is not affiliated with this in any way shape or form. Any sounds and images taken from the game are used with permission from the FF14 fankit*
