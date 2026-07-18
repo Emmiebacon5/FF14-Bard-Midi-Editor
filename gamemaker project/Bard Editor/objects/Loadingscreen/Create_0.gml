@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 chosentooltip = random_range(1,18)
+sMIDIPanic()
 //chosentooltip = 17 //guarantee a loading screen for testing
 chosentooltip = floor(chosentooltip)
 

@@ -9,7 +9,15 @@ if (playing == true){
 	//AAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH!!!!!!!!!!!
 	//HOLY SHITTTTTTT THIS WORKS NOWWWW!
 	// SOOO MUCH EXPERIMENTING, SO MUCH TRIAL AND ERROR!
-	x = x + (midimanager.TPQ/60)*(midimanager.tickspersecond/ (midimanager.TPQ/60)*(delta_time/1000000))
+	//x = x + (midimanager.TPQ/60)*(midimanager.tickspersecond/ (midimanager.TPQ/60)*(delta_time/1000000))
+	
+	
+	
+	// 18/07/2026 - Emmie
+	//after figuring out what the difference between tempo and tpq is... this is... SO much more reasonable code.
+	//This is what it should have been. Beats per second/Ticks per beat.... obviously.
+	//how the FUCK the other code worked considering what i was doing is BEYOND me.
+	x = x + (midimanager.tempo/60) * midimanager.actualfuckingtpq * (delta_time/1000000)
 
 }
 else{

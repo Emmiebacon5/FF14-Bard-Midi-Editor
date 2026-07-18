@@ -79,9 +79,9 @@ func double savemidi(int* buffer) {
         }
         
         else if (buffer[bufferpos] == -22) { //code for tempochange
-            //midifile.addTempo(0, buffer[bufferpos + 1], buffer[bufferpos + 2]);
+            midifile.addTempo(0, buffer[bufferpos + 1], buffer[bufferpos + 2]);
             bufferpos += 3;
-            //cout << "added tempo" << endl;
+            cout << "added tempo" << endl;
             continue;
         }
         if (buffer[bufferpos] == -21) { break; }

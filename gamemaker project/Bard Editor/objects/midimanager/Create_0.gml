@@ -6,3 +6,4 @@ var outs = rtmidi_probe_outs()
 randomise()
 
 rtmidi_set_outport(0)
+

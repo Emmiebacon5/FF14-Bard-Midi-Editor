@@ -42,14 +42,15 @@ function Script2(){
 			//newtpq = 60000000 / newtpq;
 			newtpq = newtpq;
 			midimanager.importTPQ = newtpq;
-			with(obj_tempo_change){if(tick == 0) {instance_destroy()}} //delete duplicate start tempos
+			//with(obj_tempo_change){if(tick == 0) {instance_destroy()}} //delete duplicate start tempos
 			var object = instance_create_layer(64,64,"instances",obj_tempo_change);
 			object.exportTPQ = newtpq;
+			object.storedtempo = 60000000/newtpq;
 			object.tick = ds_list_find_value(global.filedata,i-1);
 			if (object.tick == 0){
 				midimanager.starttempo = newtpq
-				midimanager.tempo = newtpq
-				midimanager.TPQ = newtpq
+				midimanager.tempo = 60000000/newtpq
+				//midimanager.TPQ = newtpq
 			}
 			i = i + 1 //moving on
 		}

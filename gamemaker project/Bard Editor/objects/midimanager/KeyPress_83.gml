@@ -19,11 +19,11 @@ if (ctrlheld){
 		buffer_write(midimanager.buffer,buffer_s32,channelnumber)
 		if(channelnumber > midimanager.biggestchannel){midimanager.biggestchannel = channelnumber}
 	}
-	//with(obj_tempo_change){
-	//	buffer_write(midimanager.buffer,buffer_s32,-22)
-	//	buffer_write(midimanager.buffer,buffer_s32,tick/(midimanager.tickspersecond/ (tick/60)))
-	//	buffer_write(midimanager.buffer,buffer_s32,newTPQ)
-	//}
+	with(obj_tempo_change){
+		buffer_write(midimanager.buffer,buffer_s32,-22)
+		buffer_write(midimanager.buffer,buffer_s32,tick)
+		buffer_write(midimanager.buffer,buffer_s32,storedtempo)
+	}
 
 
 	show_debug_message(buffer_get_used_size(buffer)/buffer_sizeof(buffer_s32))

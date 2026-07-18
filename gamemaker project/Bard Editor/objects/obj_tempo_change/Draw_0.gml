@@ -3,7 +3,7 @@
 draw_self()
 draw_set_colour(c_black)
 if(editing){
-	draw_text(x+64,y,"Curr TPQ: " + string(exportTPQ))
-	draw_text(x+64,y+64,"New TPQ: " + keyboard_string)
+	draw_text(x+64,y,"Curr tempo: " + string(storedtempo))
+	draw_text(x+64,y+64,"New tempo: " + keyboard_string)
 }
 draw_set_colour(c_white)
