@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":16383,
   "bbox_left":0,
-  "bbox_right":6,
+  "bbox_right":2,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -23,7 +23,7 @@
   ],
   "name":"Sprite2",
   "nineSlice":null,
-  "origin":1,
+  "origin":0,
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":3,
+    "xorigin":0,
     "yorigin":0,
   },
   "swatchColours":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":7,
+  "width":3,
 }

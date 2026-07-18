@@ -39,9 +39,11 @@ if(instance_exists(obj_filedropper)){
 		with(obj_program_change){
 			instance_destroy()
 		}
+
+		Script2()
 		with(obj_filedropper){instance_destroy()}
 		with(Loadingscreen){instance_destroy()}
-		Script2()
 		audio_play_sound(FFXIV_Notification,1,0)
+		check_for_warnings()
 	}
 }

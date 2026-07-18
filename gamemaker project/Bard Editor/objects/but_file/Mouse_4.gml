@@ -7,3 +7,5 @@ if(!instance_exists(obj_filedropper)){
 else if(instance_exists(obj_filedropper)){
 	with(obj_filedropper){instance_destroy();audio_play_sound(FFXIV_Close_Window,1,0)}
 }
+
+check_for_warnings()

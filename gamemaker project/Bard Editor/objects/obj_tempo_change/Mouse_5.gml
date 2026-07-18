@@ -4,6 +4,6 @@ editing = !editing
 
 
 if(!editing){
-	exportTPQ = real(keyboard_string)
+	storedtempo = real(keyboard_string)
 }
 keyboard_string = ""
