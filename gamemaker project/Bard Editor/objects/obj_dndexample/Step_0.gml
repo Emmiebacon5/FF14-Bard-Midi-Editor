@@ -51,6 +51,5 @@ if(instance_exists(obj_filedropper)){
 		audio_play_sound(FFXIV_Notification,1,0)
 		ds_list_clear(global.filedata)
 		buffer_delete(buffer)
-		check_for_warnings()
 	}
 }

@@ -4,5 +4,5 @@
 if(!obj_playhead.playing){
 	check_for_warnings()
 }
-alarm_set(0,1) //run me every frame
+alarm_set(0,2) //run me every frame
 //fake concurrency BABY
