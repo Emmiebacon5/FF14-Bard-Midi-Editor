@@ -22,6 +22,15 @@ if(instance_exists(obj_filedropper)){
 		//}
 		show_debug_message(buffer_get_address(buffer))
 		var success = loadmidifile(obj_filedropper.file_dnd_filelist, buffer_get_address(buffer));
+		if(success != 1){
+			debug_event("Something has gone HORRIBLY WRONG PANIC!!!!!!!!!!!!!!!!")
+			with(obj_filedropper){instance_destroy()}
+			with(Loadingscreen){instance_destroy()}
+			audio_play_sound(FFXIV_Notification,1,0)
+			ds_list_clear(global.filedata)
+			buffer_delete(buffer)
+			exit
+		}
 		var data = 0
 		buffer_seek(buffer, buffer_seek_start,0)
 		ds_list_clear(global.filedata)
@@ -46,10 +55,12 @@ if(instance_exists(obj_filedropper)){
 		}
 
 		Script2()
+		window_set_caption("Bard Editor - " + string(obj_filedropper.file_dnd_filelist));
 		with(obj_filedropper){instance_destroy()}
 		with(Loadingscreen){instance_destroy()}
 		audio_play_sound(FFXIV_Notification,1,0)
 		ds_list_clear(global.filedata)
 		buffer_delete(buffer)
+		
 	}
 }
