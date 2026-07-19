@@ -33,9 +33,6 @@ if(instance_exists(obj_filedropper)){
 			else{
 				break;
 			}
-			//show_debug_message(output);
-			
-			//THIS is where the loading time comes from. This loop right here
 		}
 	
 		with(obj_Noteobject){
@@ -52,6 +49,8 @@ if(instance_exists(obj_filedropper)){
 		with(obj_filedropper){instance_destroy()}
 		with(Loadingscreen){instance_destroy()}
 		audio_play_sound(FFXIV_Notification,1,0)
+		ds_list_clear(global.filedata)
+		buffer_delete(buffer)
 		check_for_warnings()
 	}
 }
