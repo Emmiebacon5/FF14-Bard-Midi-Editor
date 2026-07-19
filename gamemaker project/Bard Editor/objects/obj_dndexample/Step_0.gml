@@ -22,12 +22,20 @@ if(instance_exists(obj_filedropper)){
 		//}
 		show_debug_message(buffer_get_address(buffer))
 		var success = loadmidifile(obj_filedropper.file_dnd_filelist, buffer_get_address(buffer));
-	
+		var data = 0
 		buffer_seek(buffer, buffer_seek_start,0)
 		ds_list_clear(global.filedata)
 		while (buffer_tell(buffer) < buffer_get_size(buffer)){
-			ds_list_add(global.filedata,(buffer_read(buffer,buffer_s32)))
+			data = buffer_read(buffer,buffer_s32)
+			if (data != -21){
+				ds_list_add(global.filedata,data)
+			}
+			else{
+				break;
+			}
 			//show_debug_message(output);
+			
+			//THIS is where the loading time comes from. This loop right here
 		}
 	
 		with(obj_Noteobject){
