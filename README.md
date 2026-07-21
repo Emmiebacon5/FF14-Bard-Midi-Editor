@@ -1,7 +1,10 @@
 # FF14 Bard Midi Editor
 A midi editor with features designed specifically with Final Fantasy 14's bards in mind
 
-**This program is in early beta and should not be used as a replacement YET. I am a solo dev on this passion project, and while i have commitment issues with projects I do intend to see this through, it is just a lot of work and features.**
+**Good news!! The program is now fully functional and should NOT break existing files!**
+Whenever you save, the program will only save to a midi called "testmidiyay" in the same directory as the program. This is to stop any overwrites killing a perfectly good file, especially during beta. You are free to move that midi, rename it, etc.
+
+Actual editing tools/capability is now in the works.
 #
 
 Someone I know, myself included, was getting very tired with the program "midieditor" because it kept crashing,it was slow, and was missing several essential features.
@@ -9,14 +12,14 @@ So, after lots of failed experiments with trying to find a suitable alternative,
 
 Created with C++ and GamemakerStudio 2 (A program with no midi implementation whatsoever (Im very proud of this)), this midi editor plans to be *THE* replacement bards all across Eorzea have been begging for.
 
-## Planned features:
+## Features:
 - Normal midi functionality, stripped down to only include things that are recognised by FF14: No velocity, effects, program changes (barring guitars), and similar.
 
 - Error checking to make sure your midi file will work well in-game: Checking for overlapping notes, 3 or more being played at the same time, making sure notes are in range of being playable by the game, checking instruments exist in game, among other things.
 
-- Weaving simulation: When you try to play 2 or more notes at the same time, but they have to be "strummed" to work in FF14, this program will have an option to simulate that in a non-destructive way.
+- Weaving simulation *(planned)*: When you try to play 2 or more notes at the same time, but they have to be "strummed" to work in FF14, this program will have an option to simulate that in a non-destructive way.
 
-- Hopefully, be able to play midi files in the **FF14 SOUNDFONT** (or if not, guide the user in being able to do so, as the solution may not be within the program itself)
+- Hopefully, be able to play midi files in the **FF14 SOUNDFONT** (or if not, guide the user in being able to do so, as the solution may not be within the program itself) *(planned)*
 
 ## This program was made using these external libraries, and would not be possible without them:
 - GMSSimpleMIDI: https://github.com/RhyminGarfunkle/GMSSimpleMIDI
