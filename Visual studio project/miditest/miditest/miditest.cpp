@@ -69,6 +69,10 @@ func double savemidi(int* buffer) {
     while (true) {
         cout << buffer[bufferpos] << endl;
         if (buffer[bufferpos] == -2) { midifile.addTracks(buffer[bufferpos + 1]); bufferpos += 2; continue; }
+        
+        //add program change. Always at tick 0, channel and track are treated the same.
+        if (buffer[bufferpos] == -23) { midifile.addPatchChange(buffer[bufferpos + 1],0,buffer[bufferpos + 1],buffer[bufferpos + 2]); bufferpos += 3; continue; }
+        
         if (buffer[bufferpos] == -1) { //code for noteon
 
             midifile.addNoteOn(buffer[bufferpos + 4], buffer[bufferpos + 1], buffer[bufferpos + 4], buffer[bufferpos + 2], 100);
@@ -149,9 +153,12 @@ func double loadmidifile(const char* filename, int* buffer) {
     midifile.read(filename);
     //else midifile.read(options.getArg(1));
     //midifile.doTimeAnalysis();
-    midifile.linkNotePairs();
-
     int tracks = midifile.getTrackCount();
+    midifile.splitTracksByChannel();
+    midifile.markSequence();
+    midifile.linkNotePairs();
+    
+    
     //cout << "TPQ: " << midifile.getTicksPerQuarterNote() << endl;
     int bufferpos = 0;
     buffer[bufferpos] = midifile.getTicksPerQuarterNote();
@@ -235,6 +242,7 @@ func double loadmidifile(const char* filename, int* buffer) {
             //cout << endl;
         }
     }
+    cout << "pog" << endl;
     //buffer format
     // tick, note code, duration, messagesize, [hex1], [hex2], [hex3]
     // codes:

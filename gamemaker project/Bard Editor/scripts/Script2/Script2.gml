@@ -32,10 +32,10 @@ function Script2(){
 			var obj = instance_create_layer(x,y,"Instances",obj_program_change);
 			obj.msg1 = currvalue
 			obj.msg2 = ds_list_find_value(global.filedata,i+1)
-			if(obj.msg2 == -3){
+			if(obj.msg2 == -3){ //weird duplicate bugged entry.... dont know how
 				instance_destroy(obj)
 			}
-			else{ //weird duplicate bugged entry.... dont know how
+			else{ 
 				obj.tick = ds_list_find_value(global.filedata,i-3)
 				if(obj.tick < 200){
 					ds_list_replace(obj_bards_instruments.instruments,currentchannel,obj.msg2)
