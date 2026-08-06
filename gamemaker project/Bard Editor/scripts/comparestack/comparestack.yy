@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"comparestack",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"comparestack",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

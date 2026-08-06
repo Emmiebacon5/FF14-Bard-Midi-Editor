@@ -1,6 +1,10 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function Script2(){
+	for(var i = 0;i < ds_list_size(global.undoredostack);i++){
+		ds_list_clear(ds_list_find_value(global.undoredostack,i))//zero out everything
+	}
+	
 	var currentchannel = -1; //start at -1 straight into 0
 	for(var i = 0; i < ds_list_size(global.filedata); i++){
 		var currvalue = ds_list_find_value(global.filedata,i);
@@ -29,7 +33,7 @@ function Script2(){
 		}
 		if (currvalue >= 192 and currvalue <= 207){
 			//we know this is programchange
-			var obj = instance_create_layer(x,y,"Instances",obj_program_change);
+			var obj = instance_create_layer(0,0,"Instances",obj_program_change);
 			obj.msg1 = currvalue
 			obj.msg2 = ds_list_find_value(global.filedata,i+1)
 			if(obj.msg2 == -3){ //weird duplicate bugged entry.... dont know how

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"savetoundostack",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"savetoundostack",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

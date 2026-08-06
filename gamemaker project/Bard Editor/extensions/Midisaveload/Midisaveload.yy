@@ -16,11 +16,10 @@
   "exportToGame":true,
   "extensionVersion":"0.0.1",
   "files":[
-    {"$GMExtensionFile":"v1","%Name":"","constants":[],"copyToTargets":-1,"filename":"miditest.dll","final":"createrandommidi","functions":[
-        {"$GMExtensionFunction":"","%Name":"createrandommidi","argCount":0,"args":[],"documentation":"","externalName":"createrandommidi","help":"","hidden":false,"kind":1,"name":"createrandommidi","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+    {"$GMExtensionFile":"v1","%Name":"","constants":[],"copyToTargets":-1,"filename":"miditest.dll","final":"","functions":[
         {"$GMExtensionFunction":"","%Name":"loadmidifile","argCount":0,"args":[1,1,],"documentation":"","externalName":"loadmidifile","help":"loadmidifile( filename, buffer)","hidden":false,"kind":1,"name":"loadmidifile","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
         {"$GMExtensionFunction":"","%Name":"savemidifile","argCount":0,"args":[1,],"documentation":"","externalName":"savemidi","help":"savemidifile(buffer)","hidden":false,"kind":1,"name":"savemidifile","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
-      ],"init":"createrandommidi","kind":1,"name":"","origname":"","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
+      ],"init":"","kind":1,"name":"","origname":"","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
   ],
   "gradleinject":null,
   "hasConvertedCodeInjection":true,
