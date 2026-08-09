@@ -13,3 +13,5 @@ global.stackposition = 0
 for (var i = 0; i < 10; i++){
 	ds_list_add(global.undoredostack,ds_list_create())
 }
+
+visiblenotelist = ds_list_create()
