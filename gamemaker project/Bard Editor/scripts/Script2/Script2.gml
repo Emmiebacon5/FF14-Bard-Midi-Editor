@@ -3,6 +3,7 @@
 function Script2(){
 	for(var i = 0;i < ds_list_size(global.undoredostack);i++){
 		ds_list_clear(ds_list_find_value(global.undoredostack,i))//zero out everything
+		global.stackposition = 0
 	}
 	
 	var currentchannel = -1; //start at -1 straight into 0

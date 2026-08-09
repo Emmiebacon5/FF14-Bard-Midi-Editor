@@ -2,6 +2,13 @@ should
 support default drum sounds as a test-sound for import purposes
 Use MP4 files for playback, NOT midi
 
+--------
+EDITOR FUNCTIONS
+Button to quickly swap track 8 with track 10, to bring the drums into range straight away.
+An overlay function to quickly compare two tracks, to easily and quickly merge them or parts of them together
+
+
+---------
 could
 
 

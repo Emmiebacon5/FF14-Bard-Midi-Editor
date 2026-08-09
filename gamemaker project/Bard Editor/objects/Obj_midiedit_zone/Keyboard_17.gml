@@ -4,20 +4,17 @@ if(keyboard_check_pressed(ord("Z"))){
 	if(global.stackposition > 0){
 		//this makes sense trust
 		if (global.stackposition == 9){
-			savetoundostack()
-		
-			global.stackposition --
+			savetoundostack(true)
 			global.stackposition --
 			comparestack()
 		}
 		else if(ds_list_size(ds_list_find_value(global.undoredostack,global.stackposition + 1)) != 0){
+			savetoundostack(true)
 			global.stackposition --
 			comparestack()
 		}
 		else if(ds_list_size(ds_list_find_value(global.undoredostack,global.stackposition + 1)) == 0){
-			savetoundostack()
-		
-			global.stackposition --
+			savetoundostack(true)
 			global.stackposition --
 			comparestack()
 		}
