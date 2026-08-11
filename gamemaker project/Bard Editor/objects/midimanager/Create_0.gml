@@ -15,3 +15,12 @@ for (var i = 0; i < 10; i++){
 }
 
 visiblenotelist = ds_list_create()
+
+enum snapmode{
+	none,
+	beat,
+	qbeat,
+	ebeat,
+	stbeat,
+}
+currentsnap = snapmode.none;

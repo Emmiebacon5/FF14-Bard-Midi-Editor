@@ -59,6 +59,9 @@ function Script2(){
 			var object = instance_create_layer(64,64,"instances",obj_tempo_change);
 			object.exportTPQ = newtpq;
 			object.storedtempo = 60000000/newtpq;
+			if(newtpq < 100000){
+				object.storedtempo = floor((60000000/(newtpq*10))*0.6261924);
+			}
 			object.tick = ds_list_find_value(global.filedata,i-1);
 			if (object.tick == 0){
 				midimanager.starttempo = newtpq

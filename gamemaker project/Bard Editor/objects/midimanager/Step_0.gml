@@ -7,14 +7,14 @@
 //		instance_activate_object()
 //	}
 //}
-
+if(currentsnap > snapmode.stbeat){currentsnap = snapmode.none}
 
 var _vx = camera_get_view_x(view_camera[0]);
 var _vy = camera_get_view_y(view_camera[0]);
 var _vw = camera_get_view_width(view_camera[0]);
 var _vh = camera_get_view_height(view_camera[0]);
-collision_rectangle_list(_vx - 200, _vy, _vx+_vw, _vy+_vh, obj_Noteobject, true, true ,visiblenotelist,false)
-draw_rectangle(_vx - 200, _vy, _vx+_vw, _vy+_vh,false)
+collision_rectangle_list(_vx - 1000, _vy, _vx+_vw, _vy+_vh, obj_Noteobject, true, true ,visiblenotelist,false)
+
 
 
 for(var i = 0; i < ds_list_size(visiblenotelist); i++){

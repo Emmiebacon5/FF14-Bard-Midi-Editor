@@ -8,7 +8,7 @@
 if(inview){
 
 	if(hex2 < 0){ hex2 = 0}
-	if(hex2 > 88){ hex2 = 88}
+	if(hex2 > 127){ hex2 = 127}
 	if (duration <=4){duration = 8} //potentially risky, but if its too short, the playback line can sometimes skip it
 	image_xscale = duration;
 	channelnumber = hex1-144

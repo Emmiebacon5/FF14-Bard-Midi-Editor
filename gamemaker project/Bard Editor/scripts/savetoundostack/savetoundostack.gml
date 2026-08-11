@@ -16,6 +16,11 @@ function savetoundostack(ctrlzmode = false){
 		ds_list_add(ds_list_find_value(global.undoredostack,global.stackposition),myhash)
 	
 	}
+	if(!ctrlzmode){ //remove everything ahead
+		for(var i = global.stackposition + 1;i < ds_list_size(global.undoredostack);i++){
+			ds_list_clear(ds_list_find_value(global.undoredostack,i))//zero out everything in the future
+		}
+	}
 
 	
 }

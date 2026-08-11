@@ -4,3 +4,4 @@
 game_set_speed(60,gamespeed_fps);
 collisions = ds_list_create()
 collisions2 = ds_list_create()
+tempocols = ds_list_create()

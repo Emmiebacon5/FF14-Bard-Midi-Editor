@@ -12,7 +12,7 @@
 // we want to send noteoffs slightly early, depending on speed of playhead, so the noteoff doesnt
 // accidentally kill the next note instead.
 
-if(inview){
+if(obj_playhead.playing){
 	if(x+duration <= obj_playhead.x + 2 * (midimanager.tempo/60) * midimanager.actualfuckingtpq * (delta_time/1000000) and sentoff = false){
 		sentoff = true
 		ds_list_add(obj_playhead.collisions,self)

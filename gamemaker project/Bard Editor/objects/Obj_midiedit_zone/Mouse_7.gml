@@ -2,7 +2,7 @@
 // You can write your code in this editor
 var shiftdown = keyboard_check(vk_shift)
 
-if (drawselectbox){
+if (drawselectbox) and (!drawnewnote){
 	ds_list_clear(boxhitnotes)
 	collision_rectangle_list(boxstartx,boxstarty,mouse_x,mouse_y,obj_Noteobject,true,true,boxhitnotes,false)
 	drawselectbox = false;

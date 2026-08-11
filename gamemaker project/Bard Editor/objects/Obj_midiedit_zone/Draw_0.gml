@@ -12,3 +12,6 @@ for (i = 0;i < ds_list_size(currently_selected_notes); i++){
 if(drawselectbox){
 	draw_rectangle_colour(boxstartx,boxstarty,mouse_x,mouse_y,c_blue,c_blue,c_blue,c_blue,true)
 }
+if(drawnewnote) and (boxendx > boxstartx){
+	draw_rectangle_colour(boxstartx,boxstarty,boxendx,boxstarty + 10,c_blue,c_blue,c_blue,c_blue,false)
+}

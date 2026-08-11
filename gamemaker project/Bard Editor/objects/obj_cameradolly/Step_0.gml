@@ -5,7 +5,7 @@ if(x > room_width){x = room_width}
 if(y > room_height){y = room_height}
 if(y <= 0){y = 1}
 if(obj_playhead.playing == true){
-	x = obj_playhead.x;
+	x = obj_playhead.x - 3*camera_get_view_width(view_camera[0]);
 }
 
 var ctrldown = keyboard_check(vk_control);
@@ -15,7 +15,7 @@ var mwheeldown = mouse_wheel_down()
 var mwheelup = mouse_wheel_up()
 
 //zoom controls
-var zoomspeed = 50
+var zoomspeed = 150
 if(ctrldown and mwheelup){
 	camera_set_view_size(view_camera[0],camera_get_view_width(view_camera[0])-zoomspeed*5,camera_get_view_height(view_camera[0]))
 }

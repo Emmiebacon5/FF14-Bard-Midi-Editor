@@ -2,8 +2,8 @@
 // You can write your code in this editor
 
 if (playing == true){
-	camera_set_view_border(view_camera[0],1200,2000)
-	obj_cameradolly.x = x+50
+	camera_set_view_border(view_camera[0],9999,2000)
+	obj_cameradolly.x = x + 700*camera_get_view_width(view_camera[0])/1920
 	//x = x + the BPS of the song (TPQ/60)*(the amount of ticks that pass in 1 second((delta_time / 1000000))
 	//let it be known that I AM A MOTHER FUCKING GENIUS!! NDUIWAOGBDYUWHAJGIBHDYIUWA 
 	//AAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH!!!!!!!!!!!

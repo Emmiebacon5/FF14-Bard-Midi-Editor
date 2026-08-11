@@ -16,6 +16,8 @@ void decToHexa(int n, std::string* outputlocation)
 {
     // char array to store hexadecimal number
     char hexaDeciNum[100];
+    hexaDeciNum[0] = 0;
+    hexaDeciNum[1] = 0;
 
     // Counter for hexadecimal number array
     int i = 0;
@@ -39,7 +41,14 @@ void decToHexa(int n, std::string* outputlocation)
         n = n / 16;
     }
 
+
+    if (i == 1) {
+        *outputlocation += '0';
+    }
     // Printing hexadecimal number
+    if (hexaDeciNum[0] == 0 and hexaDeciNum[1] == 0) {
+        *outputlocation = *outputlocation + "00";
+    }
     // array in reverse order
     for (int j = i - 1; j >= 0; j--)
         *outputlocation = *outputlocation + hexaDeciNum[j];

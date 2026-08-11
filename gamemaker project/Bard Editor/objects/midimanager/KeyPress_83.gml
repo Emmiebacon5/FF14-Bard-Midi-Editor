@@ -49,3 +49,6 @@ if (ctrlheld){
 	audio_play_sound(FFXIV_FATE01_Complete,1,0)
 	buffer_delete(buffer);
 }
+else{
+	currentsnap ++
+}
